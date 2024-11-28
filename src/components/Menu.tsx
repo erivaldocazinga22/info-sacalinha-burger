@@ -1,36 +1,35 @@
-"use client";
-
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import RedesSociais from "./RedesSociais";
 import FormasPagamento from "./FormasPagamento";
 import NossoSite from "./NossoSite";
+import { IconCreditCard, IconHome, IconWorld } from "@tabler/icons-react";
 
 export default function Menu() {
-    const [activeSection, setActiveSection] = useState<string | null>(null);
+    const [activeSection, setActiveSection] = useState<string | null>("redes");
 
     const menuItems = [
-        { id: "redes", title: "Nossas Redes Sociais", emoji: "🌐" },
-        { id: "pagamento", title: "Formas de Pagamento", emoji: "💳" },
-        { id: "site", title: "Nosso Site", emoji: "🏠" },
+        { id: "redes", title: "Nossas Redes Sociais", icon: IconWorld },
+        { id: "pagamento", title: "Formas de Pagamento", icon: IconCreditCard },
+        { id: "site", title: "Nosso Site", icon: IconHome },
     ];
-
+    
     return (
-        <div className="max-w-4xl mx-auto mt-12">
-            <div className="flex justify-center space-x-4 mb-12">
+        <div className="max-w-4xl mx-auto mt-12 px-4">
+            <div className="flex flex-wrap justify-center gap-4 mb-12">
                 {menuItems.map((item) => (
                     <motion.button
                         key={item.id}
                         onClick={() => setActiveSection(item.id)}
-                        className={`px-6 py-3 rounded-full transition-colors text-lg font-semibold ${
+                        className={`px-4 py-2 rounded-full transition-colors text-sm md:text-base font-semibold flex items-center ${
                             activeSection === item.id
-                                ? "bg-neon-green text-gray-900"
-                                : "bg-gray-800 hover:bg-gray-700"
+                                ? "bg-brand-green text-white"
+                                : "bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-200 hover:bg-brand-green hover:text-white"
                         }`}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        <span className="mr-2">{item.emoji}</span>
+                        <item.icon size={20} className="mr-2" />
                         {item.title}
                     </motion.button>
                 ))}

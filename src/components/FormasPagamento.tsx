@@ -19,12 +19,12 @@ export default function FormasPagamento() {
 
     return (
         <motion.div 
-            className="bg-gray-800 p-8 rounded-lg shadow-lg"
+            className="bg-neutral-100 dark:bg-neutral-800 p-6 md:p-8 rounded-lg shadow-lg"
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.3 }}
         >
-            <h2 className="text-3xl font-display mb-6 text-neon-green">Informações de Pagamento</h2>
+            <h2 className="text-2xl md:text-3xl font-display mb-6 text-brand-green">Informações de Pagamento</h2>
             {paymentInfo.map((info, index) => (
                 <motion.div 
                     key={index} 
@@ -33,16 +33,16 @@ export default function FormasPagamento() {
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ delay: index * 0.1 }}
                 >
-                    <h3 className="text-xl font-semibold mb-2">{info.title}</h3>
-                    <div className="flex items-center bg-gray-700 p-3 rounded-md">
-                        <p className="font-mono flex-grow">{info.value}</p>
+                    <h3 className="text-lg md:text-xl text-neutral-900 font-semibold mb-2">{info.title}</h3>
+                    <div className="flex items-center text-neutral-900 bg-white dark:bg-neutral-700 p-3 rounded-md">
+                        <p className="font-mono text-sm md:text-base flex-grow">{info.value}</p>
                         <motion.button
                             onClick={() => copyToClipboard(info.value, info.title)}
-                            className="ml-2 text-neon-green hover:text-white transition-colors"
+                            className="ml-2 text-brand-green hover:text-neutral-700 dark:hover:text-neutral-200 transition-colors"
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                         >
-                            <IconCopy />
+                            <IconCopy size={20} />
                         </motion.button>
                     </div>
                 </motion.div>
@@ -52,13 +52,13 @@ export default function FormasPagamento() {
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
-                    className="text-neon-green text-sm mt-2"
+                    className="text-brand-green text-sm mt-2"
                 >
                     {copiedText} copiado para a área de transferência!
                 </motion.p>
             )}
             <motion.p 
-                className="mt-6 text-sm text-gray-400"
+                className="mt-6 text-sm text-neutral-500 dark:text-neutral-400"
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.3 }}

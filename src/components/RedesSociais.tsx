@@ -3,9 +3,9 @@ import { IconBrandInstagram, IconBrandFacebook, IconBrandWhatsapp } from "@table
 
 export default function RedesSociais() {
     const socialLinks = [
-        { icon: IconBrandInstagram, href: "https://www.instagram.com/sacalinhaburguer", label: "Instagram" },
+        { icon: IconBrandInstagram, href: "https://www.instagram.com/sacalinha.burguer?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", label: "Instagram" },
         { icon: IconBrandFacebook, href: "https://www.facebook.com/sacalinhaburguer", label: "Facebook" },
-        { icon: IconBrandWhatsapp, href: "https://wa.me/5511999999999", label: "WhatsApp" },
+        { icon: IconBrandWhatsapp, href: "https://wa.me/+244937351817", label: "WhatsApp" },
     ];
 
     return (
@@ -16,18 +16,18 @@ export default function RedesSociais() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex flex-col items-center justify-center p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors group"
+                    className="flex flex-col items-center justify-center p-6 bg-neutral-100 dark:bg-neutral-800 rounded-lg hover:bg-brand-green hover:text-white transition-colors group"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                 >
                     <motion.div
-                        className="text-neon-green text-4xl mb-3"
+                        className="text-brand-green group-hover:text-white text-4xl mb-3"
                         animate={{ rotate: [0, 10, -10, 0] }}
                         transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 1.5 }}
                     >
-                        <link.icon />
+                        <link.icon size={40} />
                     </motion.div>
-                    <span className="text-lg font-semibold group-hover:text-neon-green transition-colors">
+                    <span className="text-lg font-semibold text-neutral-900 group-hover:text-white transition-colors">
                         {link.label}
                     </span>
                 </motion.a>
