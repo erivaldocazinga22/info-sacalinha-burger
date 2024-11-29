@@ -8,10 +8,13 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  @apply text-white dark:text-neutral-900 bg-white dark:bg-neutral-800;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply text-white dark:text-neutral-900 bg-white dark:bg-neutral-900;
 }

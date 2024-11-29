@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const emojis = ["🍔", "🍟", "🥤", "🍺", "🍕"];
 
-export default function AnimatedBackground() {
+export const AnimatedBackground = () => {
     const [particles, setParticles] = useState<JSX.Element[]>([]);
 
     useEffect(() => {
@@ -12,7 +12,7 @@ export default function AnimatedBackground() {
             newParticles.push(
                 <motion.div
                     key={i}
-                    className="absolute text-2xl opacity-5"
+                    className="absolute text-2xl opacity-15"
                     initial={{
                         x: Math.random() * window.innerWidth,
                         y: Math.random() * window.innerHeight,
@@ -34,4 +34,4 @@ export default function AnimatedBackground() {
     }, []);
 
     return <div className="fixed inset-0 overflow-hidden pointer-events-none">{particles}</div>;
-}
+};

@@ -1,7 +1,7 @@
 import { IconExternalLink } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 
-export default function NossoSite() {
+export const OurWebsite = () => {
     return (
         <div className="text-center">
             <motion.a
@@ -24,15 +24,15 @@ export default function NossoSite() {
                 Descubra nosso cardápio completo e faça seu pedido online!
             </motion.p>
             <motion.div
-                className="mt-8 p-4 border-t-4 border-brand-green text-neutral-900 bg-neutral-100 dark:bg-neutral-700 rounded-lg"
+                className="mt-8 p-4 border-t-4 border-brand-green text-neutral-900 bg-neutral-100 dark:bg-neutral-800 rounded-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
             >
                 <p className="text-brand-green font-semibold">Horário de Funcionamento:</p>
-                <p className="mt-2">Segunda a Domingo: 11h às 23h</p>
+                <p className="mt-2">Segunda a Domingo: 11h às 21h</p>
             </motion.div>
         </div>
     );
-}
+};
 

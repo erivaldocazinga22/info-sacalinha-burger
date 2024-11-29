@@ -1,16 +1,12 @@
 import { motion } from "framer-motion";
-import { IconBrandInstagram, IconBrandFacebook, IconBrandWhatsapp } from "@tabler/icons-react";
+import { SOCIAL_LINKS } from "../../static";
 
-export default function RedesSociais() {
-    const socialLinks = [
-        { icon: IconBrandInstagram, href: "https://www.instagram.com/sacalinha.burguer?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", label: "Instagram" },
-        { icon: IconBrandFacebook, href: "https://www.facebook.com/sacalinhaburguer", label: "Facebook" },
-        { icon: IconBrandWhatsapp, href: "https://wa.me/+244937351817", label: "WhatsApp" },
-    ];
+
+export const SocialMedia = () => {
 
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {socialLinks.map((link, index) => (
+            {SOCIAL_LINKS.map((link, index) => (
                 <motion.a
                     key={index}
                     href={link.href}
@@ -34,5 +30,5 @@ export default function RedesSociais() {
             ))}
         </div>
     );
-}
+};
 

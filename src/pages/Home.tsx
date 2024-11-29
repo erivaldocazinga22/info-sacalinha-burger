@@ -1,6 +1,6 @@
-import AnimatedBackground from "../components/AnimatedBackground";
-import Header from "../components/Header";
-import Menu from "../components/Menu";
+import { AnimatedBackground } from "../components/layout/AnimatedBackground";
+import { Header } from "../components/layout/Header";
+import { Menu } from "../components/layout/Menu";
 
 export default function Home() {
     return (
