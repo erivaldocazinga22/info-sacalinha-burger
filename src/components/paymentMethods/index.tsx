@@ -15,9 +15,10 @@ export const PaymentMethods = () => {
         >
             <h2 className="text-2xl md:text-3xl font-display mb-6 text-brand-green">Informações de Pagamento</h2>
             {PAYMENT_INFO.map((info, index) => (
-                <PaymentInfo key={index} index={index} 
+                <PaymentInfo key={info.value || info.title || index} index={index} 
                     title={info.title}
                     description={info.description}
+                    property={info.property}
                     value={info.value}
                     onCopyToClipboard={onCopyToClipboard}
                 />

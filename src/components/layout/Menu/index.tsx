@@ -5,6 +5,7 @@ import { PaymentMethods } from "@/components/paymentMethods";
 import { OurWebsite } from "@/components/ourWebsite";
 import { MenuItems } from "./MenuItems";
 import { MENU_ITEMS } from "@/static";
+import { DigitalMenu } from "@/components/digitalMenu/DigitalMenu";
 
 export const Menu = () => {
     const [activeSection, setActiveSection] = useState<string | null>("redes");
@@ -31,6 +32,7 @@ export const Menu = () => {
                         transition={{ duration: 0.3 }}
                         className="mt-8"
                     >
+                        {activeSection === "menu" && <DigitalMenu />}
                         {activeSection === "redes" && <SocialMedia />}
                         {activeSection === "pagamento" && <PaymentMethods />}
                         {activeSection === "site" && <OurWebsite />}

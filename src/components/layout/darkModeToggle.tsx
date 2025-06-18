@@ -1,6 +1,6 @@
 import { useDarkMode } from "@/hooks/darkmode";
 import { IconMoon, IconSun } from "@tabler/icons-react";
-import React from "react";
+import type React from "react";
 import { cn } from "../../lib/utils";
 
 type DarkModeToggleProps = React.ComponentProps<"button">;

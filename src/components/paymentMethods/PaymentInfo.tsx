@@ -1,6 +1,6 @@
 import { IconCopy } from "@tabler/icons-react";
 import { motion } from "framer-motion";
-import React from "react";
+import type React from "react";
 
 type PaymentInfoProps = React.ComponentProps<"div"> & {
     title: string;
@@ -24,6 +24,12 @@ export const PaymentInfo = ({ index, onCopyToClipboard, ...info }: PaymentInfoPr
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.3 }}
                 className="text-sm text-neutral-500 dark:text-neutral-400">{info.description}</motion.p>
+
+            <motion.p 
+                initial={{ y: 5, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.3 }}
+                className="text-sm text-neutral-500 dark:text-neutral-400 mt-2">{info.property}</motion.p>
             <div className="flex items-center text-neutral-900 bg-white dark:bg-neutral-700 p-3 rounded-md">
                 <p className="font-mono text-sm md:text-base flex-grow">{info.value}</p>
                 <motion.button

@@ -22,7 +22,7 @@ export const AnimatedBackground = () => {
                     }}
                     transition={{
                         duration: Math.random() * 10 + 10,
-                        repeat: Infinity,
+                        repeat: Number.POSITIVE_INFINITY,
                         repeatType: "reverse",
                     }}
                 >

@@ -6,9 +6,9 @@ export const SocialMedia = () => {
 
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {SOCIAL_LINKS.map((link, index) => (
+            {SOCIAL_LINKS.map((link) => (
                 <motion.a
-                    key={index}
+                    key={link.href}
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -19,7 +19,7 @@ export const SocialMedia = () => {
                     <motion.div
                         className="text-brand-green group-hover:text-white text-4xl mb-3"
                         animate={{ rotate: [0, 10, -10, 0] }}
-                        transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 1.5 }}
+                        transition={{ duration: 0.5, repeat: Number.POSITIVE_INFINITY, repeatDelay: 1.5 }}
                     >
                         <link.icon size={40} />
                     </motion.div>

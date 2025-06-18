@@ -20,16 +20,15 @@ export const SOCIAL_LINKS = [
 
 export const PAYMENT_INFO = [
     { 
-        title: "IBAN do BAI", 
-        value: "PT50 0000 0000 0000 0000 0000 0",
+        title: "IBAN BCI",
+        value: "0005.0000.9132.1427.1019.7",
+        property: "JOAO DOS SANTOS JOSE SACALA",
+        description: "Utilize este IBAN para transferências bancárias." 
     },
-    { 
-        title: "Número da Conta do BAI", 
-        value: "0000 0000 0000",
-    },
+    
     { 
         title: "Número do Express", 
-        value: "000 000 000",
+        value: "927 573 541",
         description: "Para transferências express, utilize o número da conta acima."
     },
 ];
