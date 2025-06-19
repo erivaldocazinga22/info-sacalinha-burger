@@ -18,7 +18,7 @@ export const PaymentInfo = ({ index, onCopyToClipboard, ...info }: PaymentInfoPr
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: index * 0.1 }}
         >
-            <h3 className="text-lg md:text-xl text-neutral-900 font-semibold mb-2">{info.title}</h3>
+            <h3 className="text-lg md:text-xl dark:text-white text-neutral-900 font-semibold mb-2">{info.title}</h3>
             <motion.p 
                 initial={{ y: 5, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}

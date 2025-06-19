@@ -25,13 +25,13 @@ export const Header = () => {
                 >
                     Sacalinha Burguer
                 </motion.h1>
-                <DarkModeToggle className="static top-4 right-4" />
+                <DarkModeToggle className="static top-4 right-4 z-50" />
             </div>
             <motion.div 
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-neutral-200 dark:text-neutral-700 text-7xl md:text-9xl opacity-10 z-0"
                 initial={{ rotate: 0 }}
                 animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
             >
                 🍔
             </motion.div>

@@ -5,10 +5,10 @@ import { PaymentMethods } from "@/components/paymentMethods";
 import { OurWebsite } from "@/components/ourWebsite";
 import { MenuItems } from "./MenuItems";
 import { MENU_ITEMS } from "@/static";
-import { DigitalMenu } from "@/components/digitalMenu/DigitalMenu";
+import { DigitalMenu } from "@/components/digitalMenu";
 
 export const Menu = () => {
-    const [activeSection, setActiveSection] = useState<string | null>("redes");
+    const [activeSection, setActiveSection] = useState<string | null>("menu");
     
     return (
         <div className="max-w-4xl mx-auto mt-12 px-4">
