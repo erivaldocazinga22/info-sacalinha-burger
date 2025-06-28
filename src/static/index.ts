@@ -77,7 +77,7 @@ export const DIGITAL_MENU = [
 				description:
 					"O irresistível Cheese Bacon com bacon crocante, queijo derretido e muito sabor!",
 				img: ChesseBacon,
-				price: 2900,
+				price: 2700,
 			},
 			{
 				name: "Coleslaw Burguer",
