@@ -3,10 +3,13 @@ import { createRoot } from "react-dom/client";
 import Home from "./pages/Home";
 import "./globals.css";
 
-
-
-createRoot(document.getElementById("root")!).render(
-    <StrictMode>
-        <Home/>
-    </StrictMode>,
-);
+const rootElement = document.getElementById("root");
+if (rootElement) {
+	createRoot(rootElement).render(
+		<StrictMode>
+			<Home />
+		</StrictMode>,
+	);
+} else {
+	console.error('Root element with id "root" not found.');
+}
