@@ -33,17 +33,17 @@ export const SOCIAL_LINKS = [
 
 export const PAYMENT_INFO = [
 	{
-		title: "IBAN BCI",
-		value: "0005.0000.9132.1427.1019.7",
-		property: "JOAO DOS SANTOS JOSE SACALA",
+		title: "Express",
+		reference: "802 894 603",
+		entity: "10116",
 		description: "Utilize este IBAN para transferências bancárias.",
 	},
 
 	{
-		title: "Número do Express",
-		value: "927 573 541",
-		description:
-			"Para transferências express, utilize o número da conta acima.",
+		title: "IBAN Kwik",
+		value: "0420 0000 0000 0568 5407 4",
+		property: "SACALINHA BURGUER",
+		description: "Utilize este IBAN apenas para transferências KWIK.",
 	},
 ];
 
