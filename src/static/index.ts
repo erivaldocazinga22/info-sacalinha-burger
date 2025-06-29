@@ -41,7 +41,7 @@ export const PAYMENT_INFO = [
 
 	{
 		title: "Número Kwik",
-		value: "9373 518 17",
+		value: "937 351 817",
 		property: "SACALINHA BURGUER",
 		description: "Utilize este número apenas para transferências KWIK.",
 	},
