@@ -34,16 +34,16 @@ export const SOCIAL_LINKS = [
 export const PAYMENT_INFO = [
 	{
 		title: "Express",
-		reference: "802 894 603",
+		referenceId: "802 894 603",
 		entity: "10116",
-		description: "Utilize este IBAN para transferências bancárias.",
+		description: "Utilize este essas referências para pagamentos.",
 	},
 
 	{
-		title: "IBAN Kwik",
-		value: "0420 0000 0000 0568 5407 4",
+		title: "Número Kwik",
+		value: "9373 518 17",
 		property: "SACALINHA BURGUER",
-		description: "Utilize este IBAN apenas para transferências KWIK.",
+		description: "Utilize este número apenas para transferências KWIK.",
 	},
 ];
 
