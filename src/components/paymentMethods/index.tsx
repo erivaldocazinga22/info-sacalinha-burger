@@ -23,7 +23,9 @@ export const PaymentMethods = () => {
 					title={info.title}
 					description={info.description}
 					property={info.property}
-					value={info.value}
+					referenceId={info.referenceId ?? info.value ?? ""}
+					entity={info.entity ?? ""}
+					value={info.value ?? ""}
 					onCopyToClipboard={onCopyToClipboard}
 				/>
 			))}
