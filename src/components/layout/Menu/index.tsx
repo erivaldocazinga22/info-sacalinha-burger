@@ -11,7 +11,7 @@ export const Menu = () => {
 	const [activeSection, setActiveSection] = useState<string | null>("menu");
 
 	return (
-		<div className="max-w-4xl mx-auto mt-12 px-4">
+		<div className="max-w-5xl mx-auto mt-12 px-4">
 			<div className="flex flex-wrap justify-center gap-4 mb-12">
 				{MENU_ITEMS.map((item) => (
 					<MenuItems
