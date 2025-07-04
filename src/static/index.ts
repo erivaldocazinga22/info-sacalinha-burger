@@ -63,7 +63,7 @@ export const DIGITAL_MENU = [
 				description:
 					"Delicioso Cheese Burguer com ingredientes frescos e saborosos!.",
 				img: CheeseBurguer,
-				price: 2000,
+				price: 2300,
 			},
 			{
 				name: "Cheese Salada",
